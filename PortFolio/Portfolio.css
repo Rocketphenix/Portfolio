@@ -1,76 +1,65 @@
 * {
 	box-sizing: border-box;
-}
-a {
 	text-decoration: none;
-}
-a:visited {
 	color: aliceblue;
 }
-
 body {
 	background-image: url("Img/Overworld_background.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
-	color: aliceblue;
-	font-family: Arial, sans-serif;
 	margin: 0;
 	padding: 0;
 	font-size: 1.2em;
+	font-family: Arial, sans-serif;
 }
 
+/************************************************************************************************************/
+/*											Header															*/
+/************************************************************************************************************/
 header {
 	background-color: #333;
 	padding: 20px;
 	text-align: right;
-	position: fixed; /* Header reste fixe */
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 125px;
-	z-index: 1000; /* S'assure que le header reste au-dessus du contenu */
+	height: 100px;
 	display: flex;
-	justify-content: space-between; /* Espace entre le titre et la nav */
-	align-items: center; /* Centre verticalement le contenu */
+	justify-content: space-between;
+	align-items: center;
+	z-index: 1000; /* S'assure que le header reste au-dessus du contenu */
 }
 header ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	display: flex; /* Afficher les éléments en ligne */
-	justify-content: flex-end; /* Aligne les éléments à droite */
+	display: flex;
+	justify-content: flex-end;
 }
 header ul li {
 	margin-left: 15px;
 	font-size: 1.5em;
 	padding: 5px;
-	background-color: #4d4d4d;
 }
-header ul li:hover {
-	transform: translate(5px, 5px); /* Décalage de 5px vers le bas et la droite */
-	box-shadow: -5px -5px #4a3524;
-}
-header ul li:active {
-	transform: translate(0px, 0px); /* Décalage de 5px vers le bas et la droite */
-	box-shadow: none;
+header ul li:hover div {
+	color: rgb(111, 169, 219);
 }
 
-footer {
-	background-color: #333;
-	width: 100%;
-	position: absolute;
-}
-
+/************************************************************************************************************/
+/*											Main															*/
+/************************************************************************************************************/
 main {
 	color: black;
-	margin: 125px auto 0 auto; /* Compense la hauteur du header */
+	margin: 120px auto 0 auto; /* Compense la hauteur du header */
 	padding: 20px;
 	display: block;
 	width: 80%;
 }
 
+/* Biographie */
 #Biographie {
-	scroll-margin-top: 150px;
+	scroll-margin-top: 150px; /* Déplacer correctement la page en cliquer sur le bouton */
 	background-color: rgb(170, 170, 170);
 	display: flex;
 	margin-bottom: 100px;
@@ -86,53 +75,85 @@ main {
 	margin: auto;
 }
 
+/* Projets */
 #Projets {
-	scroll-margin-top: 150px;
+	scroll-margin-top: 150px; /* Déplacer correctement la page en cliquer sur le bouton */
 	background-color: rgb(170, 170, 170);
 	padding: 75px;
 }
 .DefinitionImgClicker {
 	padding: 0 50px 75px 50px;
 }
-.ImgClicker {
-	text-align: center;
-}
 #Projets img {
 	width: 75%;
 	padding: 0;
 }
-
-#Contact {
-	scroll-margin-top: 150px;
-	display: flex;
-	justify-content: space-between; /* Sépare les deux parties */
-	align-items: center; /* Centre verticalement les éléments */
-	border-top: 1px solid #ccc;
-	padding: 0;
-}
-.InfoContact {
-	width: 40%;
-	margin: 0;
-	display: flex;
-	flex-direction: row; /* Empile les div verticalement */
-	align-items: center; /* Aligne les éléments à droite */
-	justify-content: space-around; /* Sépare les deux parties */
-}
-.InfoContact div {
-	padding: 0;
+.ImgClicker {
 	text-align: center;
-	flex-direction: row; /* Empile les div verticalement */
-	align-items: center; /* Aligne les éléments à droite */
-	justify-content: space-around; /* Sépare les deux parties */
+}
+
+/************************************************************************************************************/
+/*											Contact															*/
+/************************************************************************************************************/
+#Contact {
+	scroll-margin-top: 150px; /* Déplacer correctement la page en cliquer sur le bouton */
+	position: absolute;
+	background-color: #333;
+	border-top: 2px solid #ccc;
+	width: 100%;
+	padding: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 #Contact h1 {
 	margin: 50px;
 }
-.InfoContact a {
-	color: aliceblue;
-	font-size: 1.2em;
+
+.InfoContact {
+	width: 40%;
+	margin: 0;
+	justify-content: space-around;
+	border-collapse: separate;
+}
+.InfoContact th,
+.InfoContact td {
+	padding: 8px;
+	text-align: center;
+	max-width: 50%;
+}
+.InfoContact th {
+	padding-left: 75px;
+	padding-right: 75px;
+}
+.InfoContact tbody {
+	padding: 0;
+	text-align: center;
+	max-width: 54%;
+	padding: 2%;
+}
+
+.info p {
+	font-size: 1.1em;
+	background-color: #4d4d4d;
+	padding: 10px;
+	transform: translate(-1px, -5px); /* Décalage vers le haut et la gauche pour donné impression bouton */
+	box-shadow: 3px 5px #4a3524;
+	overflow: hidden;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+}
+.info p:hover {
+	transform: translate(2px, 0px); /* retiré le décalage */
+	box-shadow: none;
+}
+
+.linkedln {
+	width: 50%;
+	margin: 0 auto;
 }
 .InfoContact img {
-	width: 25px;
-	height: 25px;
+	max-width: 24px;
+	max-height: 24px;
+	vertical-align: top;
 }
