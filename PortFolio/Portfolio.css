@@ -1,8 +1,17 @@
 * {
 	box-sizing: border-box;
 }
+a {
+	text-decoration: none;
+}
+a:visited {
+	color: aliceblue;
+}
+
 body {
-	background-color: #21314b;
+	background-image: url("Img/Overworld_background.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
 	color: aliceblue;
 	font-family: Arial, sans-serif;
 	margin: 0;
@@ -34,12 +43,21 @@ header ul {
 header ul li {
 	margin-left: 15px;
 	font-size: 1.5em;
+	padding: 5px;
+	background-color: #4d4d4d;
+}
+header ul li:hover {
+	transform: translate(5px, 5px); /* Décalage de 5px vers le bas et la droite */
+	box-shadow: -5px -5px #4a3524;
+}
+header ul li:active {
+	transform: translate(0px, 0px); /* Décalage de 5px vers le bas et la droite */
+	box-shadow: none;
 }
 
 footer {
 	background-color: #333;
 	width: 100%;
-	padding: 20px;
 	position: absolute;
 }
 
@@ -52,6 +70,7 @@ main {
 }
 
 #Biographie {
+	scroll-margin-top: 150px;
 	background-color: rgb(170, 170, 170);
 	display: flex;
 	margin-bottom: 100px;
@@ -68,6 +87,7 @@ main {
 }
 
 #Projets {
+	scroll-margin-top: 150px;
 	background-color: rgb(170, 170, 170);
 	padding: 75px;
 }
@@ -83,6 +103,7 @@ main {
 }
 
 #Contact {
+	scroll-margin-top: 150px;
 	display: flex;
 	justify-content: space-between; /* Sépare les deux parties */
 	align-items: center; /* Centre verticalement les éléments */
@@ -90,9 +111,7 @@ main {
 	padding: 0;
 }
 .InfoContact {
-	border: 1px solid red;
 	width: 40%;
-	padding: 20px;
 	margin: 0;
 	display: flex;
 	flex-direction: row; /* Empile les div verticalement */
@@ -100,10 +119,20 @@ main {
 	justify-content: space-around; /* Sépare les deux parties */
 }
 .InfoContact div {
-	border: 1px solid rgb(251, 255, 0);
 	padding: 0;
 	text-align: center;
+	flex-direction: row; /* Empile les div verticalement */
+	align-items: center; /* Aligne les éléments à droite */
+	justify-content: space-around; /* Sépare les deux parties */
 }
 #Contact h1 {
 	margin: 50px;
+}
+.InfoContact a {
+	color: aliceblue;
+	font-size: 1.2em;
+}
+.InfoContact img {
+	width: 25px;
+	height: 25px;
 }
