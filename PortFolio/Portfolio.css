@@ -1,0 +1,109 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #21314b;
+	color: aliceblue;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	font-size: 1.2em;
+}
+
+header {
+	background-color: #333;
+	padding: 20px;
+	text-align: right;
+	position: fixed; /* Header reste fixe */
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 125px;
+	z-index: 1000; /* S'assure que le header reste au-dessus du contenu */
+	display: flex;
+	justify-content: space-between; /* Espace entre le titre et la nav */
+	align-items: center; /* Centre verticalement le contenu */
+}
+header ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex; /* Afficher les éléments en ligne */
+	justify-content: flex-end; /* Aligne les éléments à droite */
+}
+header ul li {
+	margin-left: 15px;
+	font-size: 1.5em;
+}
+
+footer {
+	background-color: #333;
+	width: 100%;
+	padding: 20px;
+	position: absolute;
+}
+
+main {
+	color: black;
+	margin: 125px auto 0 auto; /* Compense la hauteur du header */
+	padding: 20px;
+	display: block;
+	width: 80%;
+}
+
+#Biographie {
+	background-color: rgb(170, 170, 170);
+	display: flex;
+	margin-bottom: 100px;
+	padding: 50px;
+}
+#Biographie div {
+	width: 50%;
+	margin: auto;
+	margin-left: 8%;
+}
+#Biographie img {
+	width: 150px;
+	margin: auto;
+}
+
+#Projets {
+	background-color: rgb(170, 170, 170);
+	padding: 75px;
+}
+.DefinitionImgClicker {
+	padding: 0 50px 75px 50px;
+}
+.ImgClicker {
+	text-align: center;
+}
+#Projets img {
+	width: 75%;
+	padding: 0;
+}
+
+#Contact {
+	display: flex;
+	justify-content: space-between; /* Sépare les deux parties */
+	align-items: center; /* Centre verticalement les éléments */
+	border-top: 1px solid #ccc;
+	padding: 0;
+}
+.InfoContact {
+	border: 1px solid red;
+	width: 40%;
+	padding: 20px;
+	margin: 0;
+	display: flex;
+	flex-direction: row; /* Empile les div verticalement */
+	align-items: center; /* Aligne les éléments à droite */
+	justify-content: space-around; /* Sépare les deux parties */
+}
+.InfoContact div {
+	border: 1px solid rgb(251, 255, 0);
+	padding: 0;
+	text-align: center;
+}
+#Contact h1 {
+	margin: 50px;
+}
