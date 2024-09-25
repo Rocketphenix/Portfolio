@@ -1,7 +1,7 @@
 * {
 	box-sizing: border-box;
 	text-decoration: none;
-	color: aliceblue;
+	color: white;
 }
 body {
 	background-image: url("Img/Overworld_background.webp");
@@ -50,45 +50,90 @@ header ul li:hover div {
 /*											Main															*/
 /************************************************************************************************************/
 main {
-	color: black;
 	margin: 120px auto 0 auto; /* Compense la hauteur du header */
 	padding: 20px;
 	display: block;
-	width: 80%;
+	width: 75%;
 }
 
 /* Biographie */
 #Biographie {
 	scroll-margin-top: 150px; /* Déplacer correctement la page en cliquer sur le bouton */
 	background-color: rgb(170, 170, 170);
+	border: 10px solid #053d05;
 	display: flex;
 	margin-bottom: 100px;
-	padding: 50px;
 }
-#Biographie div {
-	width: 50%;
+.zoneTextBio {
+	width: 80%;
+	padding: 50px;
 	margin: auto;
-	margin-left: 8%;
+}
+#Biographie p {
+	width: 90%;
+	margin: 0 auto;
+	color: #6b4226;
+}
+#Biographie b {
+	color: #6b4226;
+}
+.zoneImgBio {
+	background-color: #053d05;
+	flex-grow: 8;
+	display: grid;
 }
 #Biographie img {
-	width: 150px;
+	width: 160px;
 	margin: auto;
+	border: 8px solid rgb(170, 170, 170);
+	border-radius: 15%;
 }
 
 /* Projets */
 #Projets {
 	scroll-margin-top: 150px; /* Déplacer correctement la page en cliquer sur le bouton */
-	background-color: rgb(170, 170, 170);
+}
+.ProjetPartSite {
+	background-image: url(Img/Fond_Gris.png);
+	border: 10px solid #34548f;
+	border-radius: 50px;
+	margin-bottom: 25px;
+}
+.ProjetPartClicker {
+	background-color: #978017;
 	padding: 75px;
+	border: 10px solid #34548f;
+	border-radius: 5%;
+}
+
+.EnteteProjetSite {
+	margin: 0 auto;
+	margin-bottom: 75px;
+	width: 100%;
+	position: relative;
+	background-color: #978017;
+	padding: 50px 100px 50px 100px;
+	border-radius: 40px 40px 0px 0px;
+	text-align: center;
+}
+.DefinitionImgSite {
+	margin: 0 auto;
+	margin-bottom: 75px;
+	width: 80%;
+	text-align: justify;
 }
 .DefinitionImgClicker {
-	padding: 0 50px 75px 50px;
+	margin: 0 auto;
+	margin-bottom: 75px;
+	width: 90%;
 }
 #Projets img {
 	width: 75%;
 	padding: 0;
+	border: 10px #865737;
+	border-style: ridge;
 }
-.ImgClicker {
+.ImgProjet {
 	text-align: center;
 }
 
@@ -118,7 +163,6 @@ main {
 }
 .InfoContact th,
 .InfoContact td {
-	padding: 8px;
 	text-align: center;
 	max-width: 50%;
 }
@@ -129,22 +173,20 @@ main {
 .InfoContact tbody {
 	padding: 0;
 	text-align: center;
-	max-width: 54%;
-	padding: 2%;
 }
 
 .info p {
 	font-size: 1.1em;
 	background-color: #4d4d4d;
 	padding: 10px;
-	transform: translate(-1px, -5px); /* Décalage vers le haut et la gauche pour donné impression bouton */
+	transform: translate(0px, -5px); /* Décalage vers le haut et la gauche pour donné impression bouton */
 	box-shadow: 3px 5px #4a3524;
 	overflow: hidden;
 	word-wrap: break-word;
 	overflow-wrap: break-word;
 }
 .info p:hover {
-	transform: translate(2px, 0px); /* retiré le décalage */
+	transform: translate(3px, 0px); /* retiré le décalage */
 	box-shadow: none;
 }
 
