@@ -1,24 +1,82 @@
-let connexion = window.localStorage.getItem("nbr"); // récupére la valeur localStorage
-var nbr;
+let btnSuivant = document.getElementById("btnSuivant");
+let btnPrecedent = document.getElementById("btnPrecedent");
+let page1 = document.getElementById("page1");
+let page2 = document.getElementById("page2");
+let page3 = document.getElementById("page3");
+let page4 = document.getElementById("page4");
 
-var textTest = document.getElementById("textTest");
-var btnTest = document.getElementById("btnTest");
+var nbPageActuel = 0;
+btnSuivant.addEventListener("click", function () {
+	nbPageActuel++;
+
+	switch (nbPageActuel) {
+		case 1:
+			page1.style.display = "none";
+			page2.style.display = "block";
+			break;
+		case 2:
+			page2.style.display = "none";
+			page3.style.display = "block";
+			break;
+		case 3:
+			page3.style.display = "none";
+			page4.style.display = "block";
+			break;
+		default:
+			page4.style.display = "none";
+			page1.style.display = "block";
+			nbPageActuel = 0;
+			break;
+	}
+});
+btnPrecedent.addEventListener("click", function () {
+	nbPageActuel--;
+
+	switch (nbPageActuel) {
+		case 2:
+			page4.style.display = "none";
+			page3.style.display = "block";
+			break;
+		case 1:
+			page3.style.display = "none";
+			page2.style.display = "block";
+			break;
+		case 0:
+			page2.style.display = "none";
+			page1.style.display = "block";
+			break;
+		default:
+			page1.style.display = "none";
+			page4.style.display = "block";
+			nbPageActuel = 3;
+			break;
+	}
+});
+
+/************************************************************************************************/
+/* 											Clicker												*/
+/************************************************************************************************/
+
+let connexion = window.localStorage.getItem("nbrClicker"); // récupére la valeur localStorage
+var nbrClicker;
+
+let textClicker = document.getElementById("textClicker");
+let btnClicker = document.getElementById("btnClicker");
 
 if (connexion === null) {
-	var nbr = 0; // Si pas de valeur dans le localStorage, on initialise à 0
+	var nbrClicker = 0; // Si pas de valeur dans le localStorage, on initialise à 0
 } else {
-	nbr = parseInt(connexion, 10); // Si une valeur existe, on la convertit en nombre
+	nbrClicker = parseInt(connexion, 10); // Si une valeur existe, on la convertit en nombre
 }
 // Affichage initial de la valeur
-textTest.innerText = nbr;
+textClicker.innerText = nbrClicker;
 
-btnTest.addEventListener("click", activation);
-function activation() {
-	nbr++;
-	textTest.innerText = nbr;
-}
+btnClicker.addEventListener("click", function () {
+	nbrClicker++;
+	textClicker.innerText = nbrClicker;
+});
 
 let sauvegardeAuto = setInterval(() => {
 	// Sauvegarde le nombre
-	window.localStorage.setItem("nbr", nbr);
+	window.localStorage.setItem("nbrClicker", nbrClicker);
 }, 1000);

@@ -135,6 +135,20 @@ main {
 }
 .ImgProjet {
 	text-align: center;
+	border: 1px solid red;
+}
+.LongImgProjet {
+	display: flex;
+	justify-items: center;
+	justify-content: space-around;
+	margin: 0 auto;
+	max-width: 75%;
+	border: 1px solid red;
+	text-align: center;
+}
+.LongImg {
+	max-width: 30%;
+	object-fit: contain;
 }
 
 /************************************************************************************************************/
