@@ -9,7 +9,7 @@ body {
 	background-size: cover;
 	margin: 0;
 	padding: 0;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	font-family: Arial, sans-serif;
 }
 
@@ -18,27 +18,50 @@ body {
 /************************************************************************************************************/
 header {
 	background-color: #333;
-	padding: 20px;
+	padding-left: 0;
 	text-align: right;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100px;
+	height: 70px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
 	align-items: center;
 	z-index: 1000; /* S'assure que le header reste au-dessus du contenu */
+	overflow: hidden;
+}
+.titrePage {
+	background-color: rgb(255, 195, 0);
+	text-align: left;
+	padding: 25px;
+	width: 20%;
+}
+.triangleJaune {
+	height: 0;
+	width: 0;
+	border-right: 70px solid transparent;
+	border-bottom: 70px solid rgb(255, 195, 0);
+	justify-content: flex-start;
+}
+.triangleVert {
+	height: 0;
+	width: 0;
+	border-top: 70px solid rgb(2, 97, 2);
+	border-left: 70px solid transparent;
+}
+nav {
+	background-color: rgb(2, 97, 2);
+	justify-self: right;
 }
 header ul {
 	list-style: none;
-	padding: 0;
-	margin: 0;
 	display: flex;
 	justify-content: flex-end;
+	padding-right: 25px;
 }
 header ul li {
-	margin-left: 15px;
+	margin-left: 25px;
 	font-size: 1.5em;
 	padding: 5px;
 }
@@ -50,13 +73,13 @@ header ul li:hover div {
 /*											Main															*/
 /************************************************************************************************************/
 main {
-	margin: 120px auto 0 auto; /* Compense la hauteur du header */
+	margin: 90px auto 0 auto; /* Compense la hauteur du header */
 	padding: 20px;
 	display: block;
 	width: 75%;
 }
 
-/* Biographie */
+/******************************************Biographie********************************************************/
 #Biographie {
 	scroll-margin-top: 150px; /* Déplacer correctement la page en cliquer sur le bouton */
 	background-color: rgb(170, 170, 170);
@@ -89,7 +112,7 @@ main {
 	border-radius: 15%;
 }
 
-/* Projets */
+/*******************************************Projet**********************************************************/
 #Projets {
 	scroll-margin-top: 150px; /* Déplacer correctement la page en cliquer sur le bouton */
 }
@@ -99,13 +122,21 @@ main {
 	border-radius: 50px;
 	margin-bottom: 25px;
 }
-.ProjetPartClicker {
+#ProjetPartClicker {
 	background-color: #978017;
 	padding: 75px;
 	border: 10px solid #34548f;
-	border-radius: 5%;
+	border-radius: 0 5% 5%;
+}
+#PartClicker {
+	background-color: #15a782;
+	padding: 75px;
+	border: 10px solid #34548f;
+	border-radius: 0 5% 5%;
+	text-align: center;
 }
 
+/******************************************Site********************************************************/
 .EnteteProjetSite {
 	margin: 0 auto;
 	margin-bottom: 75px;
@@ -149,11 +180,97 @@ main {
 	object-fit: contain;
 }
 
+.cherchePage {
+	margin: 15px auto 15px auto;
+	width: 60%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.cherchePage div {
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	background-color: #333;
+}
+.ProjetPartSite button {
+	background-color: transparent;
+	border-style: none;
+	height: 0;
+	width: 0;
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+}
+.ProjetPartSite #btnSuivant:hover {
+	border-left-color: rgb(138, 93, 39);
+}
+.ProjetPartSite #btnPrecedent:hover {
+	border-right-color: rgb(138, 93, 39);
+}
+.cherchePage div:hover {
+	background-color: #4e4e4e;
+}
+.ProjetPartSite #btnPrecedent {
+	border-right: 30px solid rgb(167, 129, 81);
+}
+.ProjetPartSite #btnSuivant {
+	border-left: 30px solid rgb(167, 129, 81);
+}
+
+/******************************************Clicker********************************************************/
+.miniOnglet {
+	display: flex;
+	margin-bottom: -10px;
+	text-align: center;
+	align-items: flex-end;
+}
+#btnExempleClicker img,
+#btnProjetClicker img {
+	border: none;
+}
+#btnProjetClicker,
+#btnExempleClicker {
+	border: 10px solid #34548f;
+	border-bottom: none;
+	padding: 5px;
+	width: 95px;
+	height: 65px;
+	border-radius: 50% 50% 0 0;
+}
+#btnProjetClicker:hover,
+#btnExempleClicker:hover {
+	cursor: pointer;
+}
+#btnProjetClicker {
+	background-color: #978017;
+}
+#btnExempleClicker {
+	background-color: #15a782;
+}
+.btnClicker {
+	border: none;
+	background-color: transparent;
+	width: 500px;
+}
+#btnClicker {
+	background: none;
+	border: none;
+}
+#PartClicker img {
+	border: none;
+}
+#textClicker {
+	padding: 20px;
+	margin: 0 auto;
+	color: rgb(29, 229, 236);
+	text-align: center;
+	font-size: 30px;
+	background-color: #0000009a;
+}
 /************************************************************************************************************/
 /*											Contact															*/
 /************************************************************************************************************/
 #Contact {
-	scroll-margin-top: 150px; /* Déplacer correctement la page en cliquer sur le bouton */
 	position: absolute;
 	background-color: #333;
 	border-top: 2px solid #ccc;
