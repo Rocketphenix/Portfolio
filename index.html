@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<title>Document</title>
+	</head>
+	<body>
+		<header>
+			<div class="titrePage"><h1>Ma Page</h1></div>
+			<div class="triangleJaune"></div>
+			<div class="Remplir" style="flex-grow: 1"></div>
+			<div class="triangleVert"></div>
+			<nav>
+				<ul>
+					<a href="#Biographie">
+						<li>
+							<div id="NavBio">Biographie</div>
+						</li>
+					</a>
+					<a href="#Projets">
+						<li>
+							<div id="NavProjets">Projets</div>
+						</li>
+					</a>
+					<a href="#Contact">
+						<li>
+							<div id="NavContact">Contact</div>
+						</li>
+					</a>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section id="Biographie">
+				<div class="zoneTextBio">
+					<p>
+						<b>Je m'appelle Mathias Erades, j'ai 22 ans et je suis un développeur web.</b><br />
+
+						Après avoir fait un Bac STI2D (Sciences et Technologies de l'Industrie et du Développement Durable), j'ai
+						fait un BTS SNIR (Système Numérique option Informatique et Réseau) où j'ai fait un stage à l'entreprise
+						ADGravure. Durant ce stage, mon objectif était de créer le site de l'entreprise. J'ai énormément apprécié ce
+						qui m'a donné l'envie de partir en programmation web. Désormais, je suis la formation de la 3W Academy et je
+						cherche une alternance afin de pouvoir apprendre encore davantage en codage web.
+					</p>
+				</div>
+				<div class="zoneImgBio"><img src="Img/PhotoMoi.jpg" /></div>
+			</section>
+			<section id="Projets">
+				<div class="ProjetPartSite">
+					<div class="EnteteProjetSite">
+						Avec un ami nous avons trouvé l'idée de crée un entreprise ou le projet serais de faire des sites web pour
+						des clients nous comptions donc crée un site maquette afin d'en première partie nous faire connaitre puis
+						montré au personne qui pourrais être intéressé de quoi nous sommes capable.
+					</div>
+					<div id="page1">
+						<div class="DefinitionImgSite">
+							La page d'accueil !
+							<!-- étant la première page que nous avons fais -->
+						</div>
+						<div class="ImgProjet"><img src="Img/Page d'accueil.png" /></div>
+					</div>
+					<div id="page2" style="display: none">
+						<div class="DefinitionImgSite">La page pour les sites d'entreprise !</div>
+						<div class="ImgProjet"><img src="Img/Page entreprise.png" /></div>
+					</div>
+					<div id="page3" style="display: none">
+						<div class="DefinitionImgSite">Le menu de connexion !</div>
+						<div class="LongImgProjet">
+							<img class="LongImg" src="Img/CréationCompte.png" /><img class="LongImg" src="Img/ConnexionCompte.png" />
+						</div>
+					</div>
+					<div id="page4" style="display: none">
+						<div class="DefinitionImgSite">Le site est disponible au téléphone !</div>
+						<div class="LongImgProjet">
+							<img class="LongImg" src="Img/Format Tel .png" /><img class="LongImg" src="Img/Format Tel Drop.png" />
+						</div>
+					</div>
+					<div class="cherchePage">
+						<button id="btnPrecedent"></button>
+						<div id="btnPage1" style="background-color: beige"></div>
+						<div id="btnPage2"></div>
+						<div id="btnPage3"></div>
+						<div id="btnPage4"></div>
+						<button id="btnSuivant"></button>
+					</div>
+				</div>
+				<div class="miniOnglet">
+					<div id="btnProjetClicker"><img src="Img/html-5.png" alt="Projet" /></div>
+					<div id="btnExempleClicker" style="width: 80px; height: 50px"><img src="Img/Blob.png" alt="CLicker" /></div>
+				</div>
+				<div id="ProjetPartClicker">
+					<div class="DefinitionImgClicker">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu venenatis magna. Aenean felis nisl,
+						lacinia sed tempus nec, sollicitudin non dolor. Proin nec malesuada tellus. Mauris ac vehicula elit.
+						Suspendisse gravida, est vel ultrices blandit, lorem tellus dictum nunc, lacinia suscipit diam metus id
+						orci. Aenean varius sapien magna, quis scelerisque est pharetra et. Ut auctor, ligula quis suscipit
+						eleifend, sem dolor ultricies diam, egestas dignissim eros leo ac turpis. Praesent ipsum arcu, dapibus
+						suscipit orci et, tincidunt venenatis risus. Cras faucibus luctus libero, non eleifend odio condimentum ac.
+						Mauris et magna id velit rutrum venenatis. Donec ac augue augue. Quisque eget suscipit dui. Quisque eu justo
+						ante. Nulla interdum tincidunt est, at semper lacus gravida non. Aenean nec justo sit amet enim tempus
+						ullamcorper eget a leo. Sed est est, tincidunt ut nisi nec, placerat luctus magna. Phasellus quis velit vel
+						orci consequat fringilla. Nullam in auctor ligula. Nulla id quam dolor. Maecenas in laoreet est.
+						Pellentesque tincidunt rhoncus molestie. Proin ut lectus at felis rhoncus elementum. Etiam mattis in nisl id
+						convallis. Duis pretium turpis vitae lobortis fermentum. Maecenas rutrum eu eros nec egestas.
+					</div>
+					<div class="ImgProjet"><img src="Img/Clicker.png" /></div>
+				</div>
+				<div id="PartClicker" style="display: none">
+					<div>Ici le Blob n'a pas de point de vie mais sa n'empêche pas de lui cliquer dessus</div>
+					<button class="btnClicker"><img id="btnClicker" src="Img/BlobEau.png" alt="Cliquer" /></button>
+					<div id="textClicker"></div>
+				</div>
+			</section>
+		</main>
+		<footer id="Contact">
+			<h1>Contacts</h1>
+
+			<table class="InfoContact">
+				<tbody>
+					<tr>
+						<th><h2>Mail</h2></th>
+						<th><h2>Reseau sociaux</h2></th>
+					</tr>
+					<tr>
+						<td class="info">
+							<a href="mailto:mathiaserades@gmail.com"><p>mathiaserades@gmail.com</p></a>
+						</td>
+						<td class="info">
+							<a href="https://www.linkedin.com/in/mathias-erades" target="_blank">
+								<p class="linkedln"><img src="Img/Logo linkedln.png" alt="LinkedIn Logo" /> LinkedIn</p>
+							</a>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</footer>
+	</body>
+	<script type="text/javascript" src="index.js"></script>
+</html>
