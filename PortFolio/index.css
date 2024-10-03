@@ -149,14 +149,10 @@ main {
 }
 .DefinitionImgSite {
 	margin: 0 auto;
-	margin-bottom: 75px;
+	margin-bottom: 25px;
 	width: 80%;
 	text-align: justify;
-}
-.DefinitionImgClicker {
-	margin: 0 auto;
-	margin-bottom: 75px;
-	width: 90%;
+	text-indent: 5%;
 }
 #Projets img {
 	width: 75%;
@@ -266,6 +262,11 @@ main {
 	text-align: center;
 	font-size: 30px;
 	background-color: #0000009a;
+}
+.DefinitionImgClicker {
+	margin: 0 auto;
+	margin-bottom: 50px;
+	width: 90%;
 }
 /************************************************************************************************************/
 /*											Contact															*/
