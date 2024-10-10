@@ -1,34 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
 		<link rel="stylesheet" href="index.css" />
-		<title>Document</title>
+		<title>Portfolio</title>
 	</head>
 	<body>
 		<header>
-			<div class="titrePage"><h1>Ma Page</h1></div>
+			<div class="titrePage">
+				<h1 id="h1">Ma Page</h1>
+				<img id="btnFr" src="Img/DrapeauFrance.png" alt="Francais" />
+				<img id="btnEn" src="Img/DrapeauAnglais.png" alt="English" />
+			</div>
 			<div class="triangleJaune"></div>
 			<div class="Remplir" style="flex-grow: 1"></div>
 			<div class="triangleVert"></div>
 			<nav>
 				<ul>
-					<a href="#Biographie">
-						<li>
+					<li>
+						<a href="#Biographie">
 							<div id="NavBio">Biographie</div>
-						</li>
-					</a>
-					<a href="#Projets">
-						<li>
+						</a>
+					</li>
+					<li>
+						<a href="#Projets">
 							<div id="NavProjets">Projets</div>
-						</li>
-					</a>
-					<a href="#Contact">
-						<li>
+						</a>
+					</li>
+					<li>
+						<a href="#Contact">
 							<div id="NavContact">Contact</div>
-						</li>
-					</a>
+						</a>
+					</li>
 				</ul>
 			</nav>
 		</header>
@@ -38,14 +44,21 @@
 					<p>
 						<b>Je m'appelle Mathias Erades, j'ai 22 ans et je suis un développeur web.</b><br />
 
-						Après avoir fait un Bac STI2D (Sciences et Technologies de l'Industrie et du Développement Durable), j'ai
-						fait un BTS SNIR (Système Numérique option Informatique et Réseau) où j'ai fait un stage à l'entreprise
-						ADGravure. Durant ce stage, mon objectif était de créer le site de l'entreprise. J'ai énormément apprécié ce
-						qui m'a donné l'envie de partir en programmation web. Désormais, je suis la formation de la 3W Academy et je
-						cherche une alternance afin de pouvoir apprendre encore davantage en codage web.
+						Après avoir fait un
+						<abbr title="Baccalauréat Sciences et Technologie de l'Industrie et du Développement Durable">
+							Bac STI2D</abbr
+						>, j'ai fait un
+						<abbr title="Brevet Technicien Supérieure Système Numérique option Informatique et Réseau">BTS SNIR</abbr>
+						où j'ai fait un stage à l'entreprise ADGravure. Durant ce stage, mon objectif était de créer le site de
+						l'entreprise. J'ai énormément apprécié ce qui m'a donné l'envie de partir en programmation web. Désormais,
+						je suis la formation de la 3W Academy et je cherche une alternance afin de pouvoir apprendre encore
+						davantage en codage web.
 					</p>
 				</div>
-				<div class="zoneImgBio"><img src="Img/PhotoMoi.jpg" /></div>
+				<div class="zoneImgBio">
+					<img src="Img/PhotoMoi.jpg" alt="Une photo de moi" />
+					<p><a href="Img/Mathias 3wa.pdf">Mon CV</a></p>
+				</div>
 			</section>
 			<section id="Projets">
 				<div class="ProjetPartSite">
@@ -55,13 +68,25 @@
 						connaître, puis montrer aux personnes intéressées ce dont nous sommes capables. Pendant que je me suis
 						occupé du code, lui s'est chargé du design.
 					</div>
+
+					<div class="cherchePage">
+						<button id="btnPrecedent"></button>
+						<div id="btnPage1" style="background-color: beige"></div>
+						<div id="btnPage2"></div>
+						<div id="btnPage3"></div>
+						<div id="btnPage4"></div>
+						<button id="btnSuivant"></button>
+					</div>
+
 					<div id="page1">
 						<div class="DefinitionImgSite">
 							Nous avons donc commencé par la page d'accueil, qui servira de présentation pour notre site, mais surtout
 							pour notre entreprise. Étant la première page que nous avons faite, c'est ici que nous avons choisi à quoi
 							ressemblerait l'ensemble du site. Nous avons donc opté pour un fond gris foncé avec des touches de jaune.
 						</div>
-						<div class="ImgProjet"><img src="Img/Page d'accueil.png" /></div>
+						<div class="ImgProjet">
+							<img src="Img/Paged'accueil.png" alt="Photo de la page d'accueil du site" />
+						</div>
 					</div>
 					<div id="page2" style="display: none">
 						<div class="DefinitionImgSite">
@@ -70,7 +95,10 @@
 							cliquant dessus.
 						</div>
 						<div class="LongImgProjet">
-							<img class="LongImg" src="Img/Format Tel .png" /><img class="LongImg" src="Img/Format Tel Drop.png" />
+							<img class="LongImg" src="Img/FormatTel.png" alt="Une photo du site sur téléphone" /><img
+								class="LongImg"
+								src="Img/FormatTelDrop.png"
+								alt="Une photo du site sur téléphone avec de menu de navigation afficher" />
 						</div>
 					</div>
 					<div id="page3" style="display: none">
@@ -80,7 +108,9 @@
 							bordures arrondies et une ombre, la possibilité de placer le texte sur le côté ou en dessous, ainsi qu'une
 							barre de navigation latérale.
 						</div>
-						<div class="ImgProjet"><img src="Img/Page entreprise.png" /></div>
+						<div class="ImgProjet">
+							<img src="Img/Pageentreprise.png" alt="Photo de la page pour les sites entreprises" />
+						</div>
 					</div>
 					<div id="page4" style="display: none">
 						<div class="DefinitionImgSite">
@@ -90,27 +120,23 @@
 							éviter la création de plusieurs comptes.
 						</div>
 						<div class="LongImgProjet">
-							<img class="LongImg" src="Img/CréationCompte.png" /><img class="LongImg" src="Img/ConnexionCompte.png" />
+							<img class="LongImg" src="Img/CréationCompte.png" alt="Une photo de la page de création de compte" />
+							<img class="LongImg" src="Img/ConnexionCompte.png" alt="Une photo de la page pour se connecter" />
 						</div>
-					</div>
-					<div class="cherchePage">
-						<button id="btnPrecedent"></button>
-						<div id="btnPage1" style="background-color: beige"></div>
-						<div id="btnPage2"></div>
-						<div id="btnPage3"></div>
-						<div id="btnPage4"></div>
-						<button id="btnSuivant"></button>
 					</div>
 				</div>
 				<div class="miniOnglet">
 					<div id="btnProjetClicker"><img src="Img/html-5.png" alt="Projet" /></div>
-					<div id="btnExempleClicker" style="width: 80px; height: 50px"><img src="Img/Blob.png" alt="CLicker" /></div>
+					<div id="btnExempleClicker" style="width: 80px; height: 50px">
+						<img src="Img/Blob.png" alt="Clicker" />
+					</div>
 				</div>
 				<div id="ProjetPartClicker">
 					<div class="DefinitionImgClicker">
 						Pendant la création de notre premier site, je me suis rendu compte qu'il me manquait beaucoup de
 						connaissances en développement web. J'ai donc suivi la formation gratuite sur le site OpenClassroom, où j'ai
-						beaucoup appris. Cela m'a donné l'idée de créer un 'clicker' en HTML/CSS et JavaScript. <br /><br />
+						beaucoup appris. Cela m'a donné l'idée de créer un 'clicker' en HTML/CSS et JavaScript.
+						<br /><br />
 						Le concept est simple: il y a un bouton sur lequel on clique, qui nous donne des points. Ensuite, on utilise
 						ces points pour acheter des améliorations afin de gagner encore plus de points. Il existe deux grands types
 						d'améliorations: les améliorations passives, qui génèrent des points automatiquement, et celles qui
@@ -118,7 +144,8 @@
 						Lorsque j'ai montré le jeu à mon ami, il a beaucoup aimé le concept. sachant que notre première idée allait
 						être compliquée à réaliser, entre les entreprises plus connues qui feraient le travail plus rapidement et
 						les sites permettant à n'importe qui de créer leur propre site. Nous avons donc décidé de nous concentrer
-						sur le clicker. <br /><br />
+						sur le clicker.
+						<br /><br />
 						Le bouton est devenu une image de blob avec une animation de dégâts, qui possède une barre de vie à faire
 						descendre avant de récupérer nos récompenses. Les bonus infligent désormais des dégâts à l'ennemi. Il y a
 						plusieurs niveaux avec des boss à vaincre dans un temps imparti, un système de succès qui permet de gagner
@@ -126,36 +153,34 @@
 						reprendre sa progression depuis n'importe où.<br />
 						Nous avions encore plusieurs idées, comme avoir son propre personnage avec un équipement que l'on améliore,
 						mais par manque de temps, nous avons dû arrêter le projet. Cependant, ce clicker m'a énormément appris et
-						j'espère pouvoir en apprendre encore plus en développement web.
+						j'espère pouvoir me développer encore plus.
 					</div>
-					<div class="ImgProjet"><img src="Img/Clicker.png" /></div>
+					<div class="ImgProjet"><img src="Img/Clicker.png" alt="Photo du site du Clicker" /></div>
 				</div>
 				<div id="PartClicker" style="display: none">
-					<div>Ici le Blob n'a pas de point de vie mais sa n'empêche pas de lui cliquer dessus</div>
+					<div id="TxtClic">Ici le Blob n'a pas de point de vie mais sa n'empêche pas de lui cliquer dessus</div>
 					<button class="btnClicker"><img id="btnClicker" src="Img/BlobEau.png" alt="Cliquer" /></button>
 					<div id="textClicker"></div>
 				</div>
 			</section>
 		</main>
 		<footer id="Contact">
-			<h1>Contacts</h1>
+			<h2 id="footerContacts">Contacts</h2>
 
 			<table class="InfoContact">
+				<thead>
+					<th><p>Mail</p></th>
+					<th><p id="footerRS">Réseau sociaux</p></th>
+				</thead>
 				<tbody>
-					<tr>
-						<th><h2>Mail</h2></th>
-						<th><h2>Reseau sociaux</h2></th>
-					</tr>
-					<tr>
-						<td class="info">
-							<a href="mailto:mathiaserades@gmail.com"><p>mathiaserades@gmail.com</p></a>
-						</td>
-						<td class="info">
-							<a href="https://www.linkedin.com/in/mathias-erades" target="_blank">
-								<p class="linkedln"><img src="Img/Logo linkedln.png" alt="LinkedIn Logo" /> LinkedIn</p>
-							</a>
-						</td>
-					</tr>
+					<td class="info">
+						<a href="mailto:mathiaserades@gmail.com"><p>mathiaserades@gmail.com</p></a>
+					</td>
+					<td class="info">
+						<a href="https://www.linkedin.com/in/mathias-erades" target="_blank">
+							<p class="linkedln"><img src="Img/Logolinkedln.png" alt="LinkedIn Logo" /> LinkedIn</p>
+						</a>
+					</td>
 				</tbody>
 			</table>
 		</footer>
