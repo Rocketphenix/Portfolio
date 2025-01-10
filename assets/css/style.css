@@ -4,7 +4,7 @@
 	color: white;
 }
 body {
-	background-image: url("./assets/Img/Overworld_background.webp");
+	background-image: url("../Img/Overworld_background.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
