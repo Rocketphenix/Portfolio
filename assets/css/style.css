@@ -4,7 +4,7 @@
 	color: white;
 }
 body {
-	background-image: url("../Img/Overworld_background.webp");
+	background-image: url("./Img/Overworld_background.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin: 0;
@@ -134,7 +134,7 @@ main {
 	scroll-margin-top: 100px; /* Déplacer correctement la page en cliquer sur le bouton */
 }
 .ProjetPartSite {
-	background-image: url("../Img/Fond_Gris.png");
+	background-image: url("./Img/Fond_Gris.png");
 	border: 10px solid #34548f;
 	border-radius: 50px;
 	margin-bottom: 25px;
