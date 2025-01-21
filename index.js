@@ -73,26 +73,26 @@ btnSuivant.addEventListener("click", function () {
 	switch (nbPageActuel) {
 		case 2:
 			page1.style.display = "none";
-			btnPage1.style.backgroundColor = "#333";
-			btnPage2.style.backgroundColor = "beige";
+			btnPage1.classList.remove("beige");
+			btnPage2.classList.add("beige");
 			page2.style.display = "block";
 			break;
 		case 3:
 			page2.style.display = "none";
-			btnPage2.style.backgroundColor = "#333";
-			btnPage3.style.backgroundColor = "beige";
+			btnPage2.classList.remove("beige");
+			btnPage3.classList.add("beige");
 			page3.style.display = "block";
 			break;
 		case 4:
 			page3.style.display = "none";
-			btnPage3.style.backgroundColor = "#333";
-			btnPage4.style.backgroundColor = "beige";
+			btnPage3.classList.remove("beige");
+			btnPage4.classList.add("beige");
 			page4.style.display = "block";
 			break;
 		default:
 			page4.style.display = "none";
-			btnPage4.style.backgroundColor = "#333";
-			btnPage1.style.backgroundColor = "beige";
+			btnPage4.classList.remove("beige");
+			btnPage1.classList.add("beige");
 			page1.style.display = "block";
 			nbPageActuel = 1;
 			break;
@@ -104,26 +104,26 @@ btnPrecedent.addEventListener("click", function () {
 	switch (nbPageActuel) {
 		case 3:
 			page4.style.display = "none";
-			btnPage4.style.backgroundColor = "#333";
-			btnPage3.style.backgroundColor = "beige";
+			btnPage4.classList.remove("beige");
+			btnPage3.classList.add("beige");
 			page3.style.display = "block";
 			break;
 		case 2:
 			page3.style.display = "none";
-			btnPage3.style.backgroundColor = "#333";
-			btnPage2.style.backgroundColor = "beige";
+			btnPage3.classList.remove("beige");
+			btnPage2.classList.add("beige");
 			page2.style.display = "block";
 			break;
 		case 1:
 			page2.style.display = "none";
-			btnPage2.style.backgroundColor = "#333";
-			btnPage1.style.backgroundColor = "beige";
+			btnPage2.classList.remove("beige");
+			btnPage1.classList.add("beige");
 			page1.style.display = "block";
 			break;
 		default:
 			page1.style.display = "none";
-			btnPage1.style.backgroundColor = "#333";
-			btnPage4.style.backgroundColor = "beige";
+			btnPage1.classList.remove("beige");
+			btnPage4.classList.add("beige");
 			page4.style.display = "block";
 			nbPageActuel = 4;
 			break;
@@ -138,20 +138,20 @@ btnPage1.addEventListener("click", function () {
 			break;
 		case 2:
 			page2.style.display = "none";
-			btnPage2.style.backgroundColor = "#333";
-			btnPage1.style.backgroundColor = "beige";
+			btnPage2.classList.remove("beige");
+			btnPage1.classList.add("beige");
 			page1.style.display = "block";
 			break;
 		case 3:
 			page3.style.display = "none";
-			btnPage3.style.backgroundColor = "#333";
-			btnPage1.style.backgroundColor = "beige";
+			btnPage3.classList.remove("beige");
+			btnPage1.classList.add("beige");
 			page1.style.display = "block";
 			break;
 		default:
 			page4.style.display = "none";
-			btnPage4.style.backgroundColor = "#333";
-			btnPage1.style.backgroundColor = "beige";
+			btnPage4.classList.remove("beige");
+			btnPage1.classList.add("beige");
 			page1.style.display = "block";
 			break;
 	}
@@ -162,22 +162,22 @@ btnPage2.addEventListener("click", function () {
 	switch (nbPageActuel) {
 		case 1:
 			page1.style.display = "none";
-			btnPage1.style.backgroundColor = "#333";
-			btnPage2.style.backgroundColor = "beige";
+			btnPage1.classList.remove("beige");
+			btnPage2.classList.add("beige");
 			page2.style.display = "block";
 			break;
 		case 2:
 			break;
 		case 3:
 			page3.style.display = "none";
-			btnPage3.style.backgroundColor = "#333";
-			btnPage2.style.backgroundColor = "beige";
+			btnPage3.classList.remove("beige");
+			btnPage2.classList.add("beige");
 			page2.style.display = "block";
 			break;
 		default:
 			page4.style.display = "none";
-			btnPage4.style.backgroundColor = "#333";
-			btnPage2.style.backgroundColor = "beige";
+			btnPage4.classList.remove("beige");
+			btnPage2.classList.add("beige");
 			page2.style.display = "block";
 			break;
 	}
@@ -188,22 +188,22 @@ btnPage3.addEventListener("click", function () {
 	switch (nbPageActuel) {
 		case 1:
 			page1.style.display = "none";
-			btnPage1.style.backgroundColor = "#333";
-			btnPage3.style.backgroundColor = "beige";
+			btnPage1.classList.remove("beige");
+			btnPage3.classList.add("beige");
 			page3.style.display = "block";
 			break;
 		case 2:
 			page2.style.display = "none";
-			btnPage2.style.backgroundColor = "#333";
-			btnPage3.style.backgroundColor = "beige";
+			btnPage2.classList.remove("beige");
+			btnPage3.classList.add("beige");
 			page3.style.display = "block";
 			break;
 		case 3:
 			break;
 		default:
 			page4.style.display = "none";
-			btnPage4.style.backgroundColor = "#333";
-			btnPage3.style.backgroundColor = "beige";
+			btnPage4.classList.remove("beige");
+			btnPage3.classList.add("beige");
 			page3.style.display = "block";
 			break;
 	}
@@ -214,20 +214,20 @@ btnPage4.addEventListener("click", function () {
 	switch (nbPageActuel) {
 		case 1:
 			page1.style.display = "none";
-			btnPage1.style.backgroundColor = "#333";
-			btnPage4.style.backgroundColor = "beige";
+			btnPage1.classList.remove("beige");
+			btnPage4.classList.add("beige");
 			page4.style.display = "block";
 			break;
 		case 2:
 			page2.style.display = "none";
-			btnPage2.style.backgroundColor = "#333";
-			btnPage4.style.backgroundColor = "beige";
+			btnPage2.classList.remove("beige");
+			btnPage4.classList.add("beige");
 			page4.style.display = "block";
 			break;
 		case 3:
 			page3.style.display = "none";
-			btnPage3.style.backgroundColor = "#333";
-			btnPage4.style.backgroundColor = "beige";
+			btnPage3.classList.remove("beige");
+			btnPage4.classList.add("beige");
 			page4.style.display = "block";
 			break;
 		default:
@@ -239,51 +239,35 @@ btnPage4.addEventListener("click", function () {
 /******************************************Hover************************************************/
 // Bouton 1
 btnPage1.onmouseover = function () {
-	if (btnPage1.style.backgroundColor == "rgb(51, 51, 51)") {
-		btnPage1.style.backgroundColor = "#4e4e4e";
-	}
+	if (!btnPage1.classList.contains("beige")) btnPage1.classList.add("hovering");
 };
 btnPage1.onmouseout = function () {
-	if (btnPage1.style.backgroundColor == "rgb(78, 78, 78)") {
-		btnPage1.style.backgroundColor = "#333";
-	}
+	btnPage1.classList.remove("hovering");
 };
 // Bouton 2
 btnPage2.onmouseover = function () {
-	if (btnPage2.style.backgroundColor == "rgb(51, 51, 51)") {
-		btnPage2.style.backgroundColor = "#4e4e4e";
-	}
+	if (!btnPage2.classList.contains("beige")) btnPage2.classList.add("hovering");
 };
 btnPage2.onmouseout = function () {
-	if (btnPage2.style.backgroundColor == "rgb(78, 78, 78)") {
-		btnPage2.style.backgroundColor = "#333";
-	}
+	btnPage2.classList.remove("hovering");
 };
 // Bouton 3
 btnPage3.onmouseover = function () {
-	if (btnPage3.style.backgroundColor == "rgb(51, 51, 51)") {
-		btnPage3.style.backgroundColor = "#4e4e4e";
-	}
+	if (!btnPage3.classList.contains("beige")) btnPage3.classList.add("hovering");
 };
 btnPage3.onmouseout = function () {
-	if (btnPage3.style.backgroundColor == "rgb(78, 78, 78)") {
-		btnPage3.style.backgroundColor = "#333";
-	}
+	btnPage3.classList.remove("hovering");
 };
 // Bouton 4
 btnPage4.onmouseover = function () {
-	if (btnPage4.style.backgroundColor == "rgb(51, 51, 51)") {
-		btnPage4.style.backgroundColor = "#4e4e4e";
-	}
+	if (!btnPage4.classList.contains("beige")) btnPage4.classList.add("hovering");
 };
 btnPage4.onmouseout = function () {
-	if (btnPage4.style.backgroundColor == "rgb(78, 78, 78)") {
-		btnPage4.style.backgroundColor = "#333";
-	}
+	btnPage4.classList.remove("hovering");
 };
 
 /************************************************************************************************/
-/* 											Clicker												*/
+/* 																							Clicker																					*/
 /************************************************************************************************/
 /************************************Accès Clicker***********************************************/
 let btnProjetClicker = document.getElementById("btnProjetClicker");

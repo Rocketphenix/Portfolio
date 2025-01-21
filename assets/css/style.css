@@ -31,52 +31,70 @@ header {
 	z-index: 1000; /* S'assure que le header reste au-dessus du contenu */
 	overflow: hidden;
 }
+
 .titrePage {
 	background-color: rgb(255, 195, 0);
 	text-align: left;
 	padding: 25px;
-	width: 20%;
 	display: inline-flex;
 	align-items: center;
+	z-index: 1;
 }
+
 .titrePage img {
 	width: 45px;
+	max-width: 100%;
 	height: 30px;
+	max-height: 100%;
 	padding: 0;
 	margin-left: 25px;
 }
+
 .triangleJaune {
 	height: 0;
 	width: 0;
 	border-right: 70px solid transparent;
 	border-bottom: 70px solid rgb(255, 195, 0);
-	justify-content: flex-start;
 }
+
 .triangleVert {
 	height: 0;
 	width: 0;
 	border-top: 70px solid rgb(2, 97, 2);
 	border-left: 70px solid transparent;
+	margin-left: auto; /* Pousse les éléments suivants à droite */
 }
+
 nav {
+	padding: 15px 0;
 	background-color: rgb(2, 97, 2);
-	justify-self: right;
+	z-index: 1;
 }
+
 header ul {
 	list-style: none;
 	display: flex;
 	justify-content: flex-end;
+	align-items: center;
 	padding-right: 25px;
+	margin: 0;
 }
+
 header ul li {
 	margin-left: 25px;
 	font-size: 1.5em;
 	padding: 5px;
 }
+
 header ul li:hover div {
 	color: rgb(111, 169, 219);
 }
 
+@media screen and (max-width: 1025px) {
+	h1 {
+		display: none;
+	}
+}
 /*************************************************************/
 /*						 						   Main														 */
 /*************************************************************/
@@ -121,14 +139,24 @@ main {
 	flex-grow: 8;
 	display: grid;
 	text-align: center;
+	padding: 10px;
 }
 #Biographie img {
 	width: 160px;
 	margin: auto;
 	border: 8px solid rgb(170, 170, 170);
 	border-radius: 15%;
+	margin-bottom: 10px;
 }
 
+@media screen and (max-width: 1025px) {
+	#Biographie {
+		flex-direction: column;
+	}
+	.zoneTextBio {
+		width: 100%;
+	}
+}
 /*******************************Projet************************/
 #Projets {
 	scroll-margin-top: 100px; /* Déplacer correctement la page en cliquer sur le bouton */
@@ -232,6 +260,13 @@ main {
 	border-left: 30px solid rgb(167, 129, 81);
 }
 
+.cherchePage div.beige {
+	background-color: beige;
+}
+.cherchePage div.hovering {
+	background-color: #4e4e4e;
+}
+
 /*********************************Clicker************************/
 .miniOnglet {
 	display: flex;
@@ -259,8 +294,14 @@ main {
 #btnProjetClicker {
 	background-color: rgb(185, 142, 0);
 }
+#btnProjetClicker:hover {
+	background-color: rgb(212, 179, 69);
+}
 #btnExempleClicker {
 	background-color: rgb(2, 97, 2);
+}
+#btnExempleClicker:hover {
+	background-color: rgb(40, 110, 40);
 }
 .btnClicker {
 	border: none;
@@ -270,6 +311,9 @@ main {
 #btnClicker {
 	background: none;
 	border: none;
+}
+#btnClicker:hover {
+	cursor: pointer;
 }
 #PartClicker img {
 	border: none;
@@ -286,6 +330,21 @@ main {
 	margin: 0 auto;
 	margin-bottom: 50px;
 	width: 90%;
+}
+
+@media screen and (max-width: 1025px) {
+	.ProjetPartSite {
+		border-radius: 0;
+	}
+	.EnteteProjetSite {
+		border-radius: 0;
+	}
+	#ProjetPartClicker {
+		border-radius: 0;
+	}
+	#PartClicker {
+		border-radius: 0;
+	}
 }
 /*****************************************************************/
 /*																		Contact						 				 */
