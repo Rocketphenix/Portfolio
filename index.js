@@ -327,11 +327,11 @@ var combo = false; // En animation de dégats
 var animation; // Animation du Blob prenant des dégats
 
 btnClicker.addEventListener("click", function () {
-	btnClicker.src = "./assets/img/BlobEau_Hit.png";
+	btnClicker.src = "./assets/Img/BlobEau_Hit.png";
 	if (combo == true) clearInterval(animation);
 	combo = true;
 	animation = setTimeout(function () {
-		btnClicker.src = "./assets/img/BlobEau.png";
+		btnClicker.src = "./assets/Img/BlobEau.png";
 		combo = false;
 	}, 1000);
 
