@@ -13,9 +13,9 @@ body {
 	font-family: Arial, sans-serif;
 }
 
-/************************************************************************************************************/
+/************************************************************/
 /*											Header															*/
-/************************************************************************************************************/
+/************************************************************/
 header {
 	background-color: #333;
 	padding-left: 0;
@@ -77,9 +77,9 @@ header ul li:hover div {
 	color: rgb(111, 169, 219);
 }
 
-/************************************************************************************************************/
-/*																																				Main															*/
-/************************************************************************************************************/
+/*************************************************************/
+/*						 						   Main														 */
+/*************************************************************/
 main {
 	margin: 90px auto 0 auto; /* Compense la hauteur du header */
 	padding: 20px;
@@ -87,7 +87,7 @@ main {
 	width: 75%;
 }
 
-/******************************************Biographie********************************************************/
+/******************************Biographie*********************/
 #Biographie {
 	scroll-margin-top: 150px; /* Déplacer correctement la page en cliquer sur le bouton */
 	background-color: rgb(170, 170, 170);
@@ -129,7 +129,7 @@ main {
 	border-radius: 15%;
 }
 
-/*******************************************Projet**********************************************************/
+/*******************************Projet************************/
 #Projets {
 	scroll-margin-top: 100px; /* Déplacer correctement la page en cliquer sur le bouton */
 }
@@ -154,7 +154,7 @@ main {
 	text-align: center;
 }
 
-/******************************************Site********************************************************/
+/******************************************Site*****************/
 .EnteteProjetSite {
 	margin: 0 auto;
 	margin-bottom: 25px;
@@ -170,13 +170,13 @@ main {
 	margin-bottom: 25px;
 	width: 80%;
 	text-align: justify;
-	text-indent: 5%;
 }
 #Projets img {
 	width: 75%;
 	padding: 0;
 	border: 10px #865737;
 	border-style: ridge;
+	object-fit: cover;
 }
 .ImgProjet {
 	text-align: center;
@@ -232,7 +232,7 @@ main {
 	border-left: 30px solid rgb(167, 129, 81);
 }
 
-/******************************************Clicker********************************************************/
+/*********************************Clicker************************/
 .miniOnglet {
 	display: flex;
 	margin-bottom: -10px;
@@ -287,9 +287,9 @@ main {
 	margin-bottom: 50px;
 	width: 90%;
 }
-/************************************************************************************************************/
-/*																																			Contact															*/
-/************************************************************************************************************/
+/*****************************************************************/
+/*																		Contact						 				 */
+/*****************************************************************/
 #Contact {
 	position: absolute;
 	background-color: #333;
@@ -327,7 +327,10 @@ main {
 	font-size: 1.1em;
 	background-color: #4d4d4d;
 	padding: 10px;
-	transform: translate(0px, -5px); /* Décalage vers le haut et la gauche pour donné impression bouton */
+	transform: translate(
+		0px,
+		-5px
+	); /* Décalage vers le haut et la gauche pour donné impression bouton */
 	box-shadow: 3px 5px #4a3524;
 	overflow: hidden;
 	word-wrap: break-word;

@@ -45,7 +45,8 @@ btnEn.addEventListener("click", function () {
 		"Our third page should have been the blog page, so we needed the ability de to connect to an account. I used MySQL to créate the database and I set up a login form with an identifier. I integrated a password encryption system and requested various information to avoid creating multiple accounts.";
 	document.querySelector("#ProjetPartClicker .DefinitionImgClicker").innerHTML =
 		'While creating our first website, I realized I lacked a lot of knowledge in web development. So I took the free course on OpenClassroom, where I learned a lot. This gave me the idea to create a "clicker" in HTML/CSS and JavaScript.  <br /><br />The concept is simple: there\'s a button you click, which gives you points. Then you use these points to buy upgrades to earn even more points. There are two main types of upgrades: passive upgrades, which generate points automatically, and those that improve your clicks.<br />When I showed the game to my friend, he really liked the concept. Knowing that our first idea would be complicated to implement, between well-known companies that would do the work faster and websites allowing anyone to create their own site, we decided to focus on the clicker.<br /><br />The button became a blob image with a damage animation, which has a health bar to bring down before collecting our rewards. Bonuses now inflict damage on the enemy. There are several levels with bosses to defeat within a given time, an achievement system that allows you to earn various bonuses, as well as an account creation system with data saving so you can resume your progress from anywhere. <br />We still had several ideas, like having your own character with equipment that you upgrade, but due to lack of time, we had to stop the project. However, this clicker taught me a lot and I hope to learn even more about web development.';
-	document.querySelector("#TxtClic").innerText = "Here the Blob doesn't have life point but we can still click on it.";
+	document.querySelector("#TxtClic").innerText =
+		"Here the Blob doesn't have life point but we can still click on it.";
 	document.querySelector("#footerRS").innerText = "Social Network";
 });
 
@@ -284,7 +285,6 @@ btnPage4.onmouseout = function () {
 /************************************************************************************************/
 /* 											Clicker												*/
 /************************************************************************************************/
-
 /************************************Accès Clicker***********************************************/
 let btnProjetClicker = document.getElementById("btnProjetClicker");
 let btnExempleClicker = document.getElementById("btnExempleClicker");
@@ -327,11 +327,11 @@ var combo = false; // En animation de dégats
 var animation; // Animation du Blob prenant des dégats
 
 btnClicker.addEventListener("click", function () {
-	btnClicker.src = "./assets/Img/BlobEau_Hit.png";
+	btnClicker.src = "./assets/img/BlobEau_Hit.png";
 	if (combo == true) clearInterval(animation);
 	combo = true;
 	animation = setTimeout(function () {
-		btnClicker.src = "./assets/Img/BlobEau.png";
+		btnClicker.src = "./assets/img/BlobEau.png";
 		combo = false;
 	}, 1000);
 
