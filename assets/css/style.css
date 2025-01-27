@@ -131,7 +131,7 @@ main {
 #Biographie b {
 	color: #6b4226;
 }
-#Biographie a {
+#Biographie .zoneImgBio a p {
 	color: rgb(170, 170, 170);
 }
 .zoneImgBio {
