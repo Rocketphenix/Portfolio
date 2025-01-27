@@ -331,6 +331,10 @@ main {
 	margin-bottom: 50px;
 	width: 90%;
 }
+#TxtClic a {
+	text-decoration: underline;
+	font-weight: bold;
+}
 
 @media screen and (max-width: 1025px) {
 	.ProjetPartSite {
