@@ -51,7 +51,38 @@ btnEn.addEventListener("click", function () {
 });
 
 /************************************************************************************************/
-/* 											Photo Site											*/
+/* 																					Slider Projet																				*/
+/************************************************************************************************/
+// let barSlide = document.getElementById("horizontal-slider");
+// let zoneProjet = document.getElementById("zoneProjet");
+let site = document.getElementById("site");
+let clicker = document.getElementById("clicker");
+let arkanoid = document.getElementById("arkanoid");
+let pokedex = document.getElementById("pokedex");
+let squareSite = document.getElementById("squareSite");
+let squareClicker = document.getElementById("squareClicker");
+let squareArkanoid = document.getElementById("squareArkanoid");
+let squarePokedex = document.getElementById("squarePokedex");
+
+// barSlide.addEventListener("input", function () {
+// 	let value = barSlide.value;
+// 	zoneProjet.style.transform = `translateX(${(0 - value) * 2}px)`;
+// });
+squareSite.addEventListener("click", function () {
+	site.classList.toggle("hidden");
+});
+squareClicker.addEventListener("click", function () {
+	clicker.classList.toggle("hidden");
+});
+squareArkanoid.addEventListener("click", function () {
+	arkanoid.classList.toggle("hidden");
+});
+squarePokedex.addEventListener("click", function () {
+	pokedex.classList.toggle("hidden");
+});
+
+/************************************************************************************************/
+/* 																					Photo Site																					*/
 /************************************************************************************************/
 
 let btnSuivant = document.getElementById("btnSuivant");

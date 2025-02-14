@@ -2,6 +2,9 @@
 <html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
+		<script
+			src="https://kit.fontawesome.com/73d98e1f18.js"
+			crossorigin="anonymous"></script>
 		<meta
 			name="viewport"
 			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
@@ -69,9 +72,41 @@
 					</a>
 				</div>
 			</section>
+
 			<section id="Projets">
-				<div class="ProjetPartSite">
-					<p class="EnteteProjetSite">
+				<!-- <div class="sliderProject"> -->
+				<!-- <div class="slider-container">
+						<input
+							type="range"
+							min="0"
+							max="100"
+							value="0"
+							id="horizontal-slider" />
+					 	</div>
+				<div class="zoneProjet"> -->
+				<div id="zoneProjet">
+					<div id="squareSite" class="squareProjet">
+						<img src="./assets/Img/Sitosphere_V2.png" alt="img Sitophère" />
+						<p>Projet Sitophère</p>
+					</div>
+					<div id="squareClicker" class="squareProjet">
+						<img src="./assets/Img/Blob.png" alt="img Blob" />
+						<p>Projet Clicker</p>
+					</div>
+					<div id="squareArkanoid" class="squareProjet">
+						<img src="./assets/Img/icone_Arkanoid.png" alt="img Arkanoid" />
+						<p>Projet Arkanoid</p>
+					</div>
+					<div id="squarePokedex" class="squareProjet">
+						<img src="./assets/Img/PokedexKanto.png" alt="img Pokedex" />
+						<p>Projet Pokedex</p>
+					</div>
+				</div>
+				<!-- </div> -->
+				<!-- </div> -->
+
+				<div id="site" class="projetPartSite hidden">
+					<p class="enteteProjetSite">
 						Avec un ami, nous avons eu l'idée de créer une entreprise dont le
 						projet serait de réaliser des sites web pour des clients. Nous
 						comptions donc créer un site maquette pour, dans un premier temps,
@@ -156,92 +191,130 @@
 						</div>
 					</div>
 				</div>
-				<div class="miniOnglet">
-					<div id="btnProjetClicker">
-						<img src="./assets/Img/html-5.png" alt="Projet" />
+
+				<div id="clicker" class="hidden">
+					<div class="miniOnglet">
+						<div id="btnProjetClicker">
+							<img src="./assets/Img/html-5.png" alt="Projet" />
+						</div>
+						<div id="btnExempleClicker" style="width: 80px; height: 50px">
+							<img src="./assets/Img/Blob.png" alt="Clicker" />
+						</div>
 					</div>
-					<div id="btnExempleClicker" style="width: 80px; height: 50px">
-						<img src="./assets/Img/Blob.png" alt="Clicker" />
+					<div id="ProjetPartClicker">
+						<p class="DefinitionImgClicker">
+							Pendant la création de notre premier site, je me suis rendu compte
+							qu'il me manquait beaucoup de connaissances en développement web.
+							J'ai donc suivi la formation gratuite sur le site OpenClassroom,
+							où j'ai beaucoup appris. Cela m'a donné l'idée de créer un
+							'clicker' en HTML/CSS et JavaScript.
+							<br /><br />
+							Le concept est simple: il y a un bouton sur lequel on clique, qui
+							nous donne des points. Ensuite, on utilise ces points pour acheter
+							des améliorations afin de gagner encore plus de points. Il existe
+							deux grands types d'améliorations: les améliorations passives, qui
+							génèrent des points automatiquement, et celles qui améliorent nos
+							clics. <br />
+							Lorsque j'ai montré le jeu à mon ami, il a beaucoup aimé le
+							concept. sachant que notre première idée allait être compliquée à
+							réaliser, entre les entreprises plus connues qui feraient le
+							travail plus rapidement et les sites permettant à n'importe qui de
+							créer leur propre site. Nous avons donc décidé de nous concentrer
+							sur le clicker.
+							<br /><br />
+							Le bouton est devenu une image de blob avec une animation de
+							dégâts, qui possède une barre de vie à faire descendre avant de
+							récupérer nos récompenses. Les bonus infligent désormais des
+							dégâts à l'ennemi. Il y a plusieurs niveaux avec des boss à
+							vaincre dans un temps imparti, un système de succès qui permet de
+							gagner divers bonus, ainsi qu'un système de création de compte
+							avec une sauvegarde des données pour pouvoir reprendre sa
+							progression depuis n'importe où.<br />
+							Nous avions encore plusieurs idées, comme avoir son propre
+							personnage avec un équipement que l'on améliore, mais par manque
+							de temps, nous avons dû arrêter le projet. Cependant, ce clicker
+							m'a énormément appris et j'espère pouvoir me développer encore
+							plus.
+						</p>
+						<div class="ImgProjet">
+							<img
+								src="./assets/Img/Clicker.png"
+								alt="Photo du site du Clicker" />
+						</div>
+					</div>
+					<div id="PartClicker" style="display: none">
+						<p id="TxtClic">
+							Vous pouvez clicker sur ce blob. Ou tester le clicker sur
+							<a href="https://rocketphenix.github.io/Clicker/" class="lienJeu"
+								>cette page</a
+							>
+						</p>
+						<button class="btnClicker">
+							<img
+								id="btnClicker"
+								src="./assets/Img/BlobEau.png"
+								alt="Cliquer" />
+						</button>
+						<div id="textClicker"></div>
 					</div>
 				</div>
-				<div id="ProjetPartClicker">
-					<p class="DefinitionImgClicker">
-						Pendant la création de notre premier site, je me suis rendu compte
-						qu'il me manquait beaucoup de connaissances en développement web.
-						J'ai donc suivi la formation gratuite sur le site OpenClassroom, où
-						j'ai beaucoup appris. Cela m'a donné l'idée de créer un 'clicker' en
-						HTML/CSS et JavaScript.
-						<br /><br />
-						Le concept est simple: il y a un bouton sur lequel on clique, qui
-						nous donne des points. Ensuite, on utilise ces points pour acheter
-						des améliorations afin de gagner encore plus de points. Il existe
-						deux grands types d'améliorations: les améliorations passives, qui
-						génèrent des points automatiquement, et celles qui améliorent nos
-						clics. <br />
-						Lorsque j'ai montré le jeu à mon ami, il a beaucoup aimé le concept.
-						sachant que notre première idée allait être compliquée à réaliser,
-						entre les entreprises plus connues qui feraient le travail plus
-						rapidement et les sites permettant à n'importe qui de créer leur
-						propre site. Nous avons donc décidé de nous concentrer sur le
-						clicker.
-						<br /><br />
-						Le bouton est devenu une image de blob avec une animation de dégâts,
-						qui possède une barre de vie à faire descendre avant de récupérer
-						nos récompenses. Les bonus infligent désormais des dégâts à
-						l'ennemi. Il y a plusieurs niveaux avec des boss à vaincre dans un
-						temps imparti, un système de succès qui permet de gagner divers
-						bonus, ainsi qu'un système de création de compte avec une sauvegarde
-						des données pour pouvoir reprendre sa progression depuis n'importe
-						où.<br />
-						Nous avions encore plusieurs idées, comme avoir son propre
-						personnage avec un équipement que l'on améliore, mais par manque de
-						temps, nous avons dû arrêter le projet. Cependant, ce clicker m'a
-						énormément appris et j'espère pouvoir me développer encore plus.
+
+				<div id="arkanoid" class="projetPartArkanoid hidden">
+					<p>
+						Durant la formation à la 3W Academy, j'ai créé le jeu Arkanoid en
+						utilisant Canvas. On lance la partie en appuyant une première fois
+						sur la barre espace, ce qui permet de déplacer la barre pour la
+						positionner comme souhaité. Une deuxième pression sur la barre
+						espace lance la partie. <br />
+						Le but est de faire rebondir la balle sur les rectangles, puis sur
+						notre barre, afin de détruire tous les rectangles. Le joueur possède
+						trois vies et peut mettre la partie en pause en réappuyant sur la
+						barre espace.
+						<a href="https://rocketphenix.github.io/Arkanoid/" class="lienJeu"
+							>Lien du jeu</a
+						>
 					</p>
-					<div class="ImgProjet">
-						<img
-							src="./assets/Img/Clicker.png"
-							alt="Photo du site du Clicker" />
-					</div>
+					<img src="./assets/Img/Arkanoid.png" alt="Arkanoid" />
 				</div>
-				<div id="PartClicker" style="display: none">
-					<p id="TxtClic">
-						Vous pouvez clicker sur ce blob. Ou tester le clicker sur
-						<a href="https://rocketphenix.github.io/Clicker/">cette page</a>
+
+				<div id="pokedex" class="projetPartPokedex hidden">
+					<p>
+						En utilisant l'API PokeAPI, j'ai pu créer un Pokédex. Je ne l'ai pas
+						encore terminé, mais il y aura un filtre permettant de rechercher le
+						Pokémon voulu. Il affichera rapidement des informations utiles sur
+						les Pokémon, comme leurs types, leurs attaques et leurs
+						statistiques. Je compte également ajouter une table des types avec
+						un calculateur pour les doubles types, ainsi qu'un calculateur de
+						dégâts.
+						<a href="https://rocketphenix.github.io/Pokedex/" class="lienJeu"
+							>Lien du site</a
+						>
 					</p>
-					<button class="btnClicker">
-						<img id="btnClicker" src="./assets/Img/BlobEau.png" alt="Cliquer" />
-					</button>
-					<div id="textClicker"></div>
+					<img src="./assets/Img/Pokedex.png" alt="Pokedex" />
 				</div>
 			</section>
 		</main>
+
 		<footer id="Contact">
 			<h2 id="footerContacts">Contacts</h2>
 
-			<table class="InfoContact">
-				<thead>
-					<th><p>Mail</p></th>
-					<th><p id="footerRS">Réseau Sociaux</p></th>
-				</thead>
-				<tbody>
-					<td class="info">
-						<a href="mailto:mathiaserades@gmail.com"
-							><p>mathiaserades@gmail.com</p></a
-						>
-					</td>
-					<td class="info">
-						<a
-							href="https://www.linkedin.com/in/mathias-erades"
-							target="_blank">
-							<p class="linkedln">
-								<img src="./assets/Img/Logolinkedln.png" alt="LinkedIn Logo" />
-								LinkedIn
-							</p>
-						</a>
-					</td>
-				</tbody>
-			</table>
+			<div class="info">
+				<div>
+					<a href="mailto:mathiaserades@gmail.com">
+						<i class="fa-solid fa-envelope"></i> mathiaserades@gmail.com
+					</a>
+				</div>
+				<div>
+					<a href="https://www.linkedin.com/in/mathias-erades" target="_blank">
+						<i class="fa-brands fa-linkedin"></i> LinkedIn
+					</a>
+				</div>
+				<div>
+					<a href="https://github.com/Rocketphenix" target="_blank">
+						<i class="fa-brands fa-github"></i> Github
+					</a>
+				</div>
+			</div>
 		</footer>
 		<script type="text/javascript" src="index.js"></script>
 	</body>
