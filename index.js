@@ -2,6 +2,7 @@ let btnFr = document.getElementById("btnFr");
 let btnEn = document.getElementById("btnEn");
 
 btnFr.addEventListener("click", () => {
+	// Intro Fr
 	document.getElementById("h1").innerText = "Ma Page";
 	document.getElementById("NavBio").innerText = "Biographie";
 	document.getElementById("NavProjets").innerText = "Projets";
@@ -9,7 +10,8 @@ btnFr.addEventListener("click", () => {
 		"#Biographie .zoneTextBio p"
 	).innerHTML = `<b>Je m'appelle Mathias Erades, j'ai 23 ans et je suis un développeur web.</b><br />Après avoir fait un <abbr title="Baccalauréat Sciences et Technologie de l'Industrie et du Développement Durable">Bac STI2D</abbr>, j'ai fait un <abbr title="Brevet Technicien Supérieure Système Numérique option Informatique et Réseau">BTS SNIR</abbr> où j'ai fait un stage à l'entreprise ADGravure. Durant ce stage, mon objectif était de créer le site de l'entreprise. J'ai énormément apprécié ce qui m'a donné l'envie de partir en programmation web. Désormais, je suis la formation de la 3W Academy et je cherche une alternance afin de pouvoir apprendre encore davantage en codage web.`;
 
-	document.querySelector("#Projets .EnteteProjetSite").innerText =
+	// Sitophere Fr
+	document.querySelector("#Projets .enteteProjetSite").innerText =
 		"Avec un ami, nous avons eu l'idée de créer une entreprise dont le projet serait de réaliser des sites web pour des clients. Nous comptions donc créer un site maquette pour, dans un premier temps, nous faire connaître, puis montrer aux personnes intéressées ce dont nous sommes capables. Pendant que je me suis occupé du code, lui s'est chargé du design.";
 	document.querySelector("#page1 .DefinitionImgSite").innerText =
 		"Nous avons donc commencé par la page d'accueil, qui servira de présentation pour notre site, mais surtout pour notre entreprise. Étant la première page que nous avons faite, c'est ici que nous avons choisi à quoi ressemblerait l'ensemble du site. Nous avons donc opté pour un fond gris foncé avec des touches de jaune.";
@@ -19,21 +21,57 @@ btnFr.addEventListener("click", () => {
 		"Ensuite, nous avons créé la page dédiée aux sites d'entreprise. Elle est similaire à notre page d'accueil en termes de concept, nous l'avons donc utilisée pour montrer nos techniques: des blocs de texte avec des bordures arrondies et une ombre, la possibilité de placer le texte sur le côté ou en dessous, ainsi qu'une barre de navigation latérale.";
 	document.querySelector("#page4 .DefinitionImgSite").innerText =
 		"Notre troisième page devait être le blog, il nous fallait donc la possibilité de se connecter. J'ai utilisé MySQL pour créer la base de données et j'ai mis en place un formulaire de connexion avec un identifiant. J'ai intégré un système de cryptage de mot de passe et demandé diverses informations pour éviter la création de plusieurs comptes.";
+
+	// Clicker Fr
 	document.querySelector("#ProjetPartClicker .DefinitionImgClicker").innerHTML =
 		"Pendant la création de notre premier site, je me suis rendu compte qu'il me manquait beaucoup de connaissances en développement web. J'ai donc suivi la formation gratuite sur le site OpenClassroom, où j'ai beaucoup appris. Cela m'a donné l'idée de créer un 'clicker' en HTML/CSS et JavaScript. <br /><br /> Le concept est simple: il y a un bouton sur lequel on clique, qui nous donne des points. Ensuite, on utilise ces points pour acheter des améliorations afin de gagner encore plus de points. Il existe deux grands types d'améliorations: les améliorations passives, qui génèrent des points automatiquement, et celles qui améliorent nos clics. <br /> Lorsque j'ai montré le jeu à mon ami, il a beaucoup aimé le concept. sachant que notre première idée allait être compliquée à réaliser, entre les entreprises plus connues qui feraient le travail plus rapidement et les sites permettant à n'importe qui de créer leur propre site. Nous avons donc décidé de nous concentrer sur le clicker. <br /><br /> Le bouton est devenu une image de blob avec une animation de dégâts, qui possède une barre de vie à faire descendre avant de récupérer nos récompenses. Les bonus infligent désormais des dégâts à l'ennemi. Il y a plusieurs niveaux avec des boss à vaincre dans un temps imparti, un système de succès qui permet de gagner divers bonus, ainsi qu'un système de création de compte avec une sauvegarde des données pour pouvoir reprendre sa progression depuis n'importe où.<br /> Nous avions encore plusieurs idées, comme avoir son propre personnage avec un équipement que l'on améliore, mais par manque de temps, nous avons dû arrêter le projet. Cependant, ce clicker m'a énormément appris et j'espère pouvoir en apprendre encore plus en développement web.";
 	document.querySelector("#TxtClic").innerHTML =
-		'Vous pouvez clicker sur ce blob. Ou tester le clicker sur <a href="https://rocketphenix.github.io/Clicker/">cette page</a>';
-	document.querySelector("#footerRS").innerText = "Réseau Sociaux";
+		'Vous pouvez clicker sur ce blob. Ou tester le clicker sur <a href="https://rocketphenix.github.io/Clicker/" class="lienJeu">cette page</a>';
+
+	// Arkanoid Fr
+	document.querySelector(
+		"#arkanoid p"
+	).innerHTML = `Durant la formation à la 3W Academy, j'ai créé le jeu Arkanoid en
+						utilisant Canvas. On lance la partie en appuyant une première fois
+						sur la barre espace, ce qui permet de déplacer la barre pour la
+						positionner comme souhaité. Une deuxième pression sur la barre
+						espace lance la partie. <br />
+						Le but est de faire rebondir la balle sur les rectangles, puis sur
+						notre barre, afin de détruire tous les rectangles. Le joueur possède
+						trois vies et peut mettre la partie en pause en réappuyant sur la
+						barre espace.
+						<a href="https://rocketphenix.github.io/Arkanoid/" class="lienJeu"
+							>Lien du jeu</a
+						>`;
+
+	// Pokedex Fr
+	document.querySelector(
+		"#pokedex p"
+	).innerHTML = `En utilisant l'API PokeAPI, j'ai pu créer un Pokédex. Je ne l'ai pas
+						encore terminé, mais il y aura un filtre permettant de rechercher le
+						Pokémon voulu. Il affichera rapidement des informations utiles sur
+						les Pokémon, comme leurs types, leurs attaques et leurs
+						statistiques. Je compte également ajouter une table des types avec
+						un calculateur pour les doubles types, ainsi qu'un calculateur de
+						dégâts.
+						<a href="https://rocketphenix.github.io/Pokedex/" class="lienJeu"
+							>Lien du site</a
+						>`;
+
+	// Outro Fr
+	document.querySelector("#footerContacts").innerText = "Réseau Sociaux";
 });
 
 btnEn.addEventListener("click", function () {
-	document.getElementById("h1").innerText = "My Page";
+	// Intro En
+	document.getElementById("h1").innerText = `My Page`;
 	document.getElementById("NavBio").innerText = "Biography";
 	document.getElementById("NavProjets").innerText = "Projects";
 	document.querySelector(
 		"#Biographie .zoneTextBio p"
 	).innerHTML = `<b>My name is Mathias Erades, i'm 23 years old and i'm a web developper.</b><br /> after my <abbr title="Baccalaureate Sciences and Technologies of Industry and Sustainable Development">Bac STI2D</abbr>, I did a <abbr title="advanced technician's certificate Digital Systems, IT and Network option">BTS SNIR</abbr> where i had a internship at the company ADGravure. during this internship, my goal was to create the company web page. I greatly appreaciated and it made me want to go in web programming. now, I am following the 3W Academy training and I am looking for a work-study program so that I can learn even more about web coding.`;
-	document.querySelector("#Projets .EnteteProjetSite").innerText =
+	// Sitophere En
+	document.querySelector("#Projets .enteteProjetSite").innerText =
 		"With a friend, we had the idea to create a company with the concept of creating web site for customers. We therefore intended to create a mock-up site fot, in the first time, make ourselves known, then show to interested people what we can do. while I was doing the coding, he did the design.";
 	document.querySelector("#page1 .DefinitionImgSite").innerText =
 		"We start with the home page, which be used to presente the site, but above all the company. Being the first page made, this is where we choose what the site will looks like. We therefore opted for a dark gray background with touches of yellow.";
@@ -42,12 +80,22 @@ btnEn.addEventListener("click", function () {
 	document.querySelector("#page3 .DefinitionImgSite").innerText =
 		"Next, we've create a page dedicated to company. It is similar to our homepage in terms of concept, therefore we used it to show what we can do, text blocks with rounded borders and shadow, the ability to place text to the side or below, as well as a side navigation bar.";
 	document.querySelector("#page4 .DefinitionImgSite").innerText =
-		"Our third page should have been the blog page, so we needed the ability de to connect to an account. I used MySQL to créate the database and I set up a login form with an identifier. I integrated a password encryption system and requested various information to avoid creating multiple accounts.";
+		"Our third page should have been the blog page, so we needed the ability de to connect to an account. I used MySQL to create the database and I set up a login form with an identifier. I integrated a password encryption system and requested various information to avoid creating multiple accounts.";
+	// Clicker En
 	document.querySelector("#ProjetPartClicker .DefinitionImgClicker").innerHTML =
-		'While creating our first website, I realized I lacked a lot of knowledge in web development. So I took the free course on OpenClassroom, where I learned a lot. This gave me the idea to create a "clicker" in HTML/CSS and JavaScript.  <br /><br />The concept is simple: there\'s a button you click, which gives you points. Then you use these points to buy upgrades to earn even more points. There are two main types of upgrades: passive upgrades, which generate points automatically, and those that improve your clicks.<br />When I showed the game to my friend, he really liked the concept. Knowing that our first idea would be complicated to implement, between well-known companies that would do the work faster and websites allowing anyone to create their own site, we decided to focus on the clicker.<br /><br />The button became a blob image with a damage animation, which has a health bar to bring down before collecting our rewards. Bonuses now inflict damage on the enemy. There are several levels with bosses to defeat within a given time, an achievement system that allows you to earn various bonuses, as well as an account creation system with data saving so you can resume your progress from anywhere. <br />We still had several ideas, like having your own character with equipment that you upgrade, but due to lack of time, we had to stop the project. However, this clicker taught me a lot and I hope to learn even more about web development.';
+		'While creating our first website, I realized I lacked a lot of knowledge in web development. So I took the free course on OpenClassroom, where I learned a lot. This gave me the idea to create a "clicker" in HTML/CSS and JavaScript.  <br /><br />The concept is simple: there\'s a button you click, which gives you points. Then you use these points to buy upgrades to earn even more points. There are two main types of upgrades: passive upgrades, which generate points automatically, and those that improve your clicks.<br />When I showed the game to my friend, he really liked the concept. Knowing that our first idea would probably not work out, between well-known companies that would do the work faster and websites allowing anyone to create their own site, we decided to focus on the clicker.<br /><br />The button became a blob image with a damage animation, which has a health bar to bring down before collecting our rewards. Bonuses now inflict damage on the enemy. There are several levels with bosses to defeat within a given time, an achievement system that allows you to earn various bonuses, as well as an account creation system with data saving so you can resume your progress from anywhere. <br />We still had several ideas, like having your own character with equipment that you upgrade, but due to lack of time, we had to stop the project. However, this clicker taught me a lot and I hope to learn even more about web development.';
 	document.querySelector("#TxtClic").innerHTML =
-		'You can click on this blob. Or try on the clicker on <a href="https://rocketphenix.github.io/Clicker/">this page</a>';
-	document.querySelector("#footerRS").innerText = "Social Network";
+		'You can click on this blob. Or try on the clicker on <a href="https://rocketphenix.github.io/Clicker/" class="lienJeu">this page</a>';
+	// Arkanoid En
+	document.getElementById(
+		"textArkanoid"
+	).innerHTML = `During my training at the 3W Academy, I created the Arkanoid game using Canvas. The game starts when you press the space bar for the first time, allowing you to move the paddle to the desired position. A second press on the space bar starts the game. <br /> The goal is to bounce the ball off the rectangles and then off our paddle to destroy all the rectangles. The player has three lives and can pause the game by pressing the space bar again. <a href="https://rocketphenix.github.io/Arkanoid/" class="lienJeu">Game link</a>`;
+	// Pokedex En
+	document.querySelector(
+		"#pokedex p"
+	).innerHTML = `By using the PokeAPI, I was able to create a Pokedex. I haven't finished it yet, but there will be a filter to search for the desired Pokémon. It will quickly display useful information about the Pokémon, such as their types, attacks, and stats. I also plan to add a type table with a calculator for double types, as well as a damage calculator. <a href="https://rocketphenix.github.io/Pokedex/" class="lienJeu">Site link</a>`;
+	// Outro En
+	document.querySelector("#footerContacts").innerText = "Social Network";
 });
 
 /************************************************************************************************/
@@ -172,6 +220,7 @@ btnPage1.addEventListener("click", function () {
 			btnPage2.classList.remove("beige");
 			btnPage1.classList.add("beige");
 			page1.style.display = "block";
+
 			break;
 		case 3:
 			page3.style.display = "none";
